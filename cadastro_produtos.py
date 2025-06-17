@@ -21,6 +21,7 @@ def salvar_estoque(estoque):
             f.write(f"{id_produto},{dados['nome']},{dados['quantidade']}\n")
 
 def adicionar_produto_ao_estoque():
+    # diminuir quantidade no estoque
     id_produto = input("ID do produto: ")
     nome = input("Nome do produto: ")
     quantidade = int(input("Quantidade: "))
